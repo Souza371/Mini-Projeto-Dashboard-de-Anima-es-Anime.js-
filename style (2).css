@@ -1,0 +1,170 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f3f4f6 0%, #e0e7ff 100%);
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #6366f1;
+  color: #fff;
+  padding: 24px 0 0 0;
+  text-align: center;
+  box-shadow: 0 2px 8px #0001;
+}
+header span {
+  color: #fbbf24;
+}
+header nav {
+  margin-top: 18px;
+}
+.tab-btn {
+  background: #fff;
+  color: #6366f1;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 2px;
+  padding: 10px 32px 8px 32px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s, color 0.2s;
+}
+.tab-btn.active {
+  background: #fbbf24;
+  color: #222;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+.dashboard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0002;
+  padding: 32px 32px 24px 32px;
+  margin: 32px 0;
+  min-width: 340px;
+  max-width: 600px;
+}
+.tabs {
+  width: 100%;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.template-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+  margin: 32px 0 16px 0;
+}
+.template-card {
+  background: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 18px 8px 12px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  position: relative;
+}
+.template-card:hover {
+  background: #fbbf24;
+  box-shadow: 0 4px 16px #6366f133;
+}
+.template-preview {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 8px auto;
+  background: #6366f1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px #0002;
+}
+.template-label {
+  font-size: 0.98rem;
+  color: #222;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+.form-row label {
+  min-width: 110px;
+  font-size: 1rem;
+}
+.form-row input, .form-row select {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+.form-row input[type="checkbox"] {
+  flex: unset;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+}
+.form-row button {
+  margin-right: 8px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #6366f1;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form-row button:hover {
+  background: #4f46e5;
+}
+.preview-area {
+  margin: 32px 0 16px 0;
+  text-align: center;
+}
+.preview-box {
+  width: 160px;
+  height: 160px;
+  background: #fbbf24;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px #0002;
+  transition: none;
+}
+.code-area {
+  margin-top: 18px;
+}
+.code-area pre {
+  background: #23272e;
+  color: #fbbf24;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1rem;
+  overflow-x: auto;
+}
+footer {
+  text-align: center;
+  color: #888;
+  margin: 24px 0 8px 0;
+  font-size: 0.95rem;
+}
