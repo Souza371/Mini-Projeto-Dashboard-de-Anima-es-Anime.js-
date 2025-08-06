@@ -7,3 +7,12 @@ anime({
   direction: 'alternate',
   loop: true
 });
+// Animação com Anime.js no botão
+anime({
+  targets: '.botao-animado',
+  scale: [1, 1.2],
+  duration: 1000,
+  easing: 'easeInOutSine',
+  direction: 'alternate',
+  loop: true
+});
